@@ -1,18 +1,18 @@
-pi@raspberry:~/ sudo apt-get update
-pi@raspberry:~/ sudo apt-get upgrade
+~/ sudo apt-get update
+~/ sudo apt-get upgrade
 
-pi@raspberry:~/ sudo apt-get install -y git-core git cmake libusb-1.0-0-dev build-essential
+~/ sudo apt-get install -y git-core git cmake libusb-1.0-0-dev build-essential
 
-pi@raspberry:~/ git clone git://git.osmocom.org/rtl-sdr.git
-pi@raspberry:~/ cd rtl-sdr/
-pi@raspberry:~/rtl-sdr $ mkdir build
-pi@raspberry:~/rtl-sdr $ cd build
-pi@raspberry:~/rtl-sdr/build $ cmake ../ -DINSTALL_UDEV_RULES=ON
-pi@raspberry:~/rtl-sdr/build $ make
-pi@raspberry:~/rtl-sdr/build $ sudo make install
-pi@raspberry:~/rtl-sdr/build $ sudo ldconfig
+~/ git clone git://git.osmocom.org/rtl-sdr.git
+~/ cd rtl-sdr/
+~/rtl-sdr $ mkdir build
+~/rtl-sdr $ cd build
+~/rtl-sdr/build $ cmake ../ -DINSTALL_UDEV_RULES=ON
+~/rtl-sdr/build $ make
+~/rtl-sdr/build $ sudo make install
+~/rtl-sdr/build $ sudo ldconfig
 
-pi@raspberry:~/sudo nano /etc/modprobe.d/blacklist-rtl.conf
+~/sudo nano /etc/modprobe.d/blacklist-rtl.conf
 
 ##Copia e incolla:
 
@@ -26,9 +26,9 @@ blacklist rtl2830
 
 ##Salva e Chiudi, Ctrl+O e Ctrl+X
 
-pi@raspberry:~/sudo reboot
+~/sudo reboot
 
-pi@raspberry:~/ rtl_test -t
+~/ rtl_test -t
 Found 1 device(s):
 0: Realtek, RTL2838UHIDIR, SN: 00000001
 
