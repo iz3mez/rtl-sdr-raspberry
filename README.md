@@ -1,1 +1,1 @@
-Installazione di RTL-SDR USB su Raspberry Pi
+Installazione di RTL-SDR USB su Raspberry, Debian, Ubuntu
