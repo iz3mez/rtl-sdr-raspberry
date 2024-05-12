@@ -3,7 +3,7 @@
 
 ~/ sudo apt-get install -y git-core git cmake libusb-1.0-0-dev build-essential
 
-~/ git clone git://git.osmocom.org/rtl-sdr.git
+~/ git clone https://github.com/osmocom/rtl-sdr.git
 ~/ cd rtl-sdr/
 ~/rtl-sdr $ mkdir build
 ~/rtl-sdr $ cd build
@@ -14,7 +14,7 @@
 
 ~/sudo nano /etc/modprobe.d/blacklist-rtl.conf
 
-##Copia e incolla:
+##Copy and paste:
 
 #
 #file blacklist-rtl.conf
@@ -24,7 +24,7 @@ blacklist rtl2832
 blacklist rtl2830
 #
 
-##Salva e Chiudi, Ctrl+O e Ctrl+X
+##Save and close, Ctrl+O and Ctrl+X
 
 ~/sudo reboot
 
@@ -39,4 +39,4 @@ Supported gain values (29): 0.0 0.9 1.4 2.7 3.7 7.7 8.7 12.5 14.4 15.7 16.6 19.7
 Sampling at 2048000 S/s.
 No E4000 tuner found, aborting.
 
-##Se visualizzi “[R82XX] PLL not locked!” e “No E4000 tuner found, aborting.” ignora i messaggi, dipende dall’hardware.
+##If display “[R82XX] PLL not locked!” and “No E4000 tuner found, aborting.” don't worry
